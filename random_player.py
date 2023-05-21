@@ -9,6 +9,7 @@
 """
 import random
 
+
 class RandomPlayer:
     def __init__(self, turn: int) -> None:
         self.turn = turn

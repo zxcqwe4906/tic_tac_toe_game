@@ -11,10 +11,12 @@ Design of board:
 2: X
 """
 
+
 class Player:
     """Player Class
     generate_move: play a move based on board
     """
+
     def __init__(self, turn: int) -> None:
         self.turn = turn
 
@@ -47,14 +49,14 @@ class Game:
 
     def print_board(self):
         for row in self.board:
-            row_str = '|'
+            row_str = "|"
             for num in row:
                 if num == 0:
-                    row_str = row_str + ' |'
+                    row_str = row_str + " |"
                 elif num == 1:
-                    row_str = row_str + 'O|'
+                    row_str = row_str + "O|"
                 elif num == 2:
-                    row_str = row_str + 'X|'
+                    row_str = row_str + "X|"
             print(row_str)
 
     def change_player(self) -> int:
@@ -68,7 +70,7 @@ class Game:
         self.board[position_num // 3][position_num % 3] = self.current_player.turn
         if print_board:
             self.print_board()
-            print('--------------------------------')
+            print("--------------------------------")
         self.change_player()
 
     def check_consecutive(self, i, j):
@@ -109,4 +111,3 @@ class Game:
         if is_full:
             return 3
         return 0
-
