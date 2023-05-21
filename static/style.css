@@ -6,7 +6,6 @@ body {
 
 .wrapper {
     display: grid;
-    border: 1px solid white;
     grid-template-rows: 15vh 3fr 2fr;
 }
 
@@ -91,4 +90,11 @@ body {
     padding-left: 18px;
     padding-right: 18px;
     border-radius: 4px;
+}
+
+.end-text {
+    margin: auto;
+    color: #e86c6c;
+    text-align: center;
+    font-size: x-large;
 }
