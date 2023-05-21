@@ -98,3 +98,10 @@ body {
     text-align: center;
     font-size: x-large;
 }
+
+#bear {
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
