@@ -1,15 +1,20 @@
-# A tic tac toe game:
-# |1|2|3|
-# |4|5|6|
-# |7|8|9|
+"""
+A tic tac toe game:
+|1|2|3|
+|4|5|6|
+|7|8|9|
 
-############################
-# Design of board:
-# 0: empty
-# 1: O
-# 2: X
+###########################
+Design of board:
+0: empty
+1: O
+2: X
+"""
 
 class Player:
+    """Player Class
+    generate_move: play a move based on board
+    """
     def __init__(self, turn: int) -> None:
         self.turn = turn
 
