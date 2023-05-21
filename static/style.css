@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    border: 1px solid white;
+    grid-template-rows: 15vh 3fr 2fr;
+}
+
+.item {
+    border: 1px solid green;
+}
+
+#tic-tac-toe {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #c4c4c4;
+    cursor: pointer;
+}
+
+#box-1, #box-2, #box-3 {
+    border-top: none;
+}
+
+#box-1, #box-4, #box-7 {
+    border-left: none;
+}
+
+#box-3, #box-6, #box-9 {
+    border-right: none;
+}
+
+#box-7, #box-8, #box-9 {
+    border-bottom: none;
+}
+
+.circle {
+    width: 21px;
+    height: 21px;
+    border: 8px solid #bb6b52;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: 21px;
+}
+
+.cross {
+    width: 8px;
+    height: 45px;
+    margin: auto;
+    transform: rotate(45deg);
+    background-color: #5283bb;
+    position: relative;
+    top: 19px;
+}
+
+.cross2 {
+    width: 8px;
+    height: 45px;
+    margin: auto;
+    transform: rotate(135deg);
+    background-color: #5283bb;
+    position: relative;
+    bottom: 25px;
+}
+
+.btn-wrapper {
+    width: 200px;
+    margin: auto;
+}
+
+#reset {
+    margin: auto;
+    background-color: #5283bb;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4px;
+}
