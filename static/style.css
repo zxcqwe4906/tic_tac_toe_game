@@ -79,9 +79,23 @@ body {
     margin: auto;
 }
 
-#reset {
+#reset{
     margin: auto;
     background-color: #5283bb;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+#ai {
+    margin: auto;
+    background-color: #e86c6c;
     color: white;
     cursor: pointer;
     text-align: center;
