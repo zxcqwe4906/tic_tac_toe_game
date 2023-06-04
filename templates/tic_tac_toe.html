@@ -22,8 +22,9 @@
                 </div>
                 {% endfor %}
             </div>
+            <div id="think-text"></div>
             <div class="btn-wrapper">
-                <div id="ai" onclick="window.location='/ai?turn={{turn}}&board={{board}}'">
+                <div id="ai" onclick="document.getElementById('think-text').innerHTML='AI thinking......';window.location='/ai?turn={{turn}}&board={{board}}'">
                     AI Play !!
                 </div>
                 <div id="reset" onclick="window.location='/'">

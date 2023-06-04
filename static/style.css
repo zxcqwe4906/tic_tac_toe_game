@@ -119,3 +119,10 @@ body {
     bottom: 0px;
     left: 0px;
 }
+
+#think-text {
+    color: #e86c6c;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 70px;
+}

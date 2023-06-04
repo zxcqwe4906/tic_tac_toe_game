@@ -7,6 +7,7 @@ from fastapi.templating import Jinja2Templates
 
 from game import Game, Player
 from random_player import RandomPlayer
+from ai_player import AIPlayer
 from utils import get_turn_from_html_str, html_str_to_board
 
 app = FastAPI()
@@ -48,7 +49,7 @@ def get_html(request: Request, board: Optional[str] = "000000000"):
 def ai_move(request: Request, board: Optional[str] = "000000000"):
     # decide move
     turn = get_turn_from_html_str(board)
-    p = RandomPlayer(int(turn))
+    p = AIPlayer(int(turn))
     move = p.generate_move(html_str_to_board(board))
     new_board = board[: move - 1] + turn + board[move:]
 
